@@ -1,0 +1,5 @@
+.dotted{border-style: solid dashed dashed dotted; text-align: center; margin-left: 500px; margin-right: 500px;}
+  .solid{border: 3px red solid;padding-bottom: 100px; margin-right:1000px;}
+      .blue{background-color: blue; width: 70px; height: 60px; text-align: left; justify-content: left;}
+         .red{background-color: red; width: 140px; height: 140px; text-align: left; justify-content: left;}
+           .yellow{background-color: yellow; width: 280px; height: 300px;}

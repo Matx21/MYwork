@@ -1,0 +1,32 @@
+@font-face {
+    font-family:BpgF1;
+    src: url(/fonts/bpg_F1.ttf);
+}
+.longline{word-break:break-all;
+          white-space:pre; text-align: left
+          ;text-overflow: ellipsis;
+        overflow: hidden;}
+.geek{color: green; font-size: xx-large;text-align: center;font-size: 65px;}
+
+.l1{text-decoration:underline wavy; text-decoration-color:green; font-size: 35px;
+   display:flex; align-items: center;justify-content: center;margin: 1%; list-style: none;}
+
+.l2{text-decoration: line-through; text-decoration-color: red; font-size: 35px;
+display: flex; align-items: center;justify-content: center;margin: 1%; list-style: none ;}   
+
+.l3{text-decoration: overline; text-decoration-color: blue; font-size: 35px;
+    display: flex; align-items: center;justify-content: center;margin:1%; list-style: none;} 
+
+.txtprop{color: blue; text-align: center; font-size: 50px;}
+
+.txtprp{text-transform: capitalize; text-align: center;font-size:40px;text-transform: lowercase;font-weight: bold;}
+
+.ap{text-align: center;}
+
+.p{
+    font-family:BpgF1;
+    text-shadow:10px 10px 10px blue; 
+    word-break:break-all; 
+    font-size: 40px;
+    white-space:normal;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Lobster|Montserrat|Roboto');
+body{
+  font-family: arial;
+  padding: 0;
+  background: #e8e8e8;
+}
+
+.movie-card{
+  max-width: 70%;
+  margin:auto;
+  padding: 20px 30px 20px 15px;
+  border-radius: 10px;
+  background-blend-mode: multiply;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.5);
+  transition: all 0.5s ease;
+}
+.movie-card:nth-child(1){
+  background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/09/hellsing-2001-and-helsing-ultimate-ova.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.movie-card:nth-child(2){
+  background-image: url('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/11/Code-Geass-Lelouch-of-the-Rebellion-Lost-Stories-1.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+.movie-card:nth-child(3){
+  background-image: url('https://occ-0-299-784.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABYxJFBDckfZw1YUEIPwyuIg43Kw_HUBLvnCcgdOlvvf5Nc90SF3HSAi5L8uLyBqjziKBY-kGD2wu2JAqVsdHVR0frb6qG26I_U5v.jpg?r=77f');
+  background-position: center;
+  background-size: contain;
+}
+.card-overlay {
+    background: linear-gradient(to right, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  min-height: 350px;
+}
+.movie-card-description{
+  max-width: 400px;
+  color: #fff;
+}
+.movie-title{
+  margin: 0;
+  font-family: Montserrat;
+}
+.movie-subtitle{
+  margin-top: 5px;
+  font-family: Lobster;
+}
+.movie-shorts{
+  font-family: Roboto;
+  text-align: justify;
+}
+
+.watch-btn{
+  max-width: 200px;
+  font-family: Fira Sans;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.watch-btn:hover{
+  color: #f00;
+  border: 1px solid #f00;
+}
+
+.card-share{
+  position: absolute;
+}
+.share-link {
+    text-decoration: none;
+    color: #e3e3e3;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+  .movie-card{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .card{
+    flex-direction: row;
+  }
+  .card-overlay {
+    background: linear-gradient(to bottom, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
+  }
+  .card-share{
+    position: relative;
+  }
+}

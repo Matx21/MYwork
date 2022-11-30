@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: block;
+  min-height: 70px;
+  position: fixed;
+  z-index: 1;
+}
+header .container {
+  min-width: 100%;
+  margin: auto;
+}
+header .raw {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .navcard {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+header .navmain {
+  margin-left: 0%;
+  width: 100%;
+  background: white;
+  display: flex;
+}
+header .navimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
+}
+header .navimg img {
+  width: 30%;
+}
+header .navul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  height: 81px;
+  background: rgb(42, 188, 255);
+  overflow: hidden;
+}
+header .navul ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+header .navul ul li {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  transition: all 0.3s;
+}
+header .navul a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .drop a {
+  display: block;
+  color: black;
+}
+header .drop ul li {
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+  background-color: white;
+  top: 65px;
+  left: 5px;
+  z-index: 111;
+}
+header .navul ul li:hover .drop ul li {
+  opacity: 1;
+}
+header .open_menu {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 30%;
+  font-size: 26px;
+  color: rgb(214, 214, 214);
+  transform: translateY(-50%);
+  display: none;
+}
+header #check {
+  display: none;
+}
+header .navbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
+  text-align: center;
+}
+header .navbtn a {
+  border: 1px solid rgb(42, 188, 255);
+  text-decoration: none;
+  color: rgb(42, 188, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+header .navbtn a:hover {
+  background: rgb(42, 188, 255);
+  color: white;
+}
+@media (max-width: 650px) {
+  header .navul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 101;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+header .navul a {
+  color: rgb(0, 0, 255);
+}
+header .open_menu {
+  display: block;
+}
+header #check:checked ~ .menu {
+  right: 0;
+}
+
+.content {
+  background: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/banner-bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 18%;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-align: center;
+  overflow: scroll;
+}
+.content .contenttext {
+  display: block;
+}
+.content .contenttext h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  text-align: center;
+}
+.content .contenttext h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  text-align: center;
+}
+.content .contenttext p {
+  color: white;
+  font-size: 16px;
+  padding: 30px 0;
+  text-align: center;
+}
+.content .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.content .explore {
+  padding: 15px 40px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.content .watch {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+}
+.content .explore a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+.content .watch a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.content .explore:hover {
+  background: white;
+}
+.content .explore a:hover {
+  color: rgb(42, 188, 255);
+  font-weight: bold;
+}
+.content .watch a:hover {
+  color: rgb(42, 188, 255);
+}
+
+section {
+  margin-top: -5%;
+}
+section .block {
+  width: 1400px;
+  margin: auto;
+}
+section .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+section .card {
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+section .gridimg img {
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+}
+section .button1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(42, 188, 255);
+  color: white;
+  position: absolute;
+  top: 97%;
+  left: 10%;
+  opacity: 0.7;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+section .button2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(42, 188, 255);
+  color: white;
+  position: absolute;
+  top: 97%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+section .button1:hover {
+  opacity: 1;
+}
+section .button2:hover {
+  opacity: 1;
+}
+section .gridcontent {
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  background: white;
+  color: rgb(42, 188, 255);
+  top: 0;
+  text-align: center;
+  padding-top: 10%;
+  transition: all 0.5s linear;
+  opacity: 0;
+  border-radius: 15px;
+}
+section .gridcontent:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 995px) {
+  section .block {
+    width: 960px;
+    margin: auto;
+  }
+  section section {
+    margin-top: 5%;
+  }
+  section .button1 {
+    opacity: 0;
+  }
+  section .button2 {
+    opacity: 0;
+  }
+  section .card {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 760px) {
+  section .block {
+    width: 720px;
+    margin: auto;
+  }
+  section .button1 {
+    opacity: 0;
+  }
+  section .button2 {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 570px) {
+  section .block {
+    width: 540px;
+    margin: auto;
+  }
+  section section {
+    margin-top: 0px;
+  }
+  section .button1 {
+    opacity: 0;
+  }
+  section .button2 {
+    opacity: 0;
+  }
+}
+section .categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+section .categories .categories h6 {
+  font-size: 21px;
+  color: rgb(42, 188, 255);
+}
+section .categories .categories h3 {
+  font-size: 30px;
+}
+section .categories .catbtn button {
+  padding: 15px 50px;
+  background: rgb(42, 188, 255);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+section .categories .catbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+section .categories .catbtn button:hover {
+  background: white;
+  border: 1px solid rgb(42, 188, 255);
+}
+section .categories .catbtn a:hover {
+  color: rgb(42, 188, 255);
+}
+section .popblock {
+  min-width: 100%;
+  margin: auto;
+  margin-top: 10%;
+}
+section .popblock .popbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section .popblock .popcard {
+  width: 24%;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 15px;
+}
+section .popblock .popcardcont {
+  margin-top: 10%;
+  display: flex;
+}
+section .popblock .popicon i {
+  padding: 20px 40px;
+  font-size: 25px;
+}
+section .popblock .popcardimg {
+  margin-top: 10%;
+  width: 90%;
+  height: 150px;
+  position: relative;
+}
+section .popblock .top {
+  font-size: 15px;
+  color: rgb(42, 188, 255);
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+section .popblock .top:hover {
+  opacity: 1;
+}
+section .popblock .heart {
+  font-size: 15px;
+  color: rgb(42, 188, 255);
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  position: absolute;
+  left: 220px;
+  top: 20px;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+section .popblock .heart:hover {
+  opacity: 1;
+}
+section .popblock .popcardimg img {
+  width: 100%;
+  height: 150px;
+  margin-left: 5%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+section .popblock .popcardbtn {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+section .popblock .popcardbtn button {
+  padding: 10px 20px;
+  border: 1px solid rgb(42, 188, 255);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+section .popblock .popcardbtn a {
+  text-decoration: none;
+  color: rgb(42, 188, 255);
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+section .popblock .popcardbtn button:hover {
+  background: rgb(42, 188, 255);
+}
+section .popblock .popcardbtn a:hover {
+  color: white;
+}
+@media screen and (max-width: 995px) {
+  section .popblock .popblock {
+    width: 700px;
+  }
+  section .popblock .popcard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 570px) {
+  section .popblock .popblock {
+    width: 540px;
+  }
+  section .popblock .popcard {
+    width: 100%;
+  }
+}/*# sourceMappingURL=snapx.css.map */
